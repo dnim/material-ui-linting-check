@@ -12,6 +12,8 @@ with: `pnpm run eslint  11.26s user 1.58s system 97% cpu 13.157 total`
 
 ### CI
 
+* use `--report-unused-disable-directives --max-warnings 0` to check if some directives can be cleaned.
+
 **concurrency**
 * update to eslint@9.34.0 +
 * use `--concarrency {auto|2|4|6}`
@@ -21,3 +23,5 @@ with: `pnpm run eslint  11.26s user 1.58s system 97% cpu 13.157 total`
 
 *note*: doesn't make too much sense to put it with `--cache` as it just load up CPU and make it even worse.
 `pnpm run eslint:concarrent:4  35.77s user 3.86s system 235% cpu 16.842 total`
+
+### oxlint
