@@ -105,7 +105,7 @@
     "nx_test_unit": "cross-env NODE_ENV=test mocha \"packages/**/*.test.?(c|m)[jt]s?(x)\" \"packages-internal/**/*.test.?(c|m)[jt]s?(x)\" \"docs/**/*.test.?(c|m)[jt]s?(x)\"",
     "oxlint": "oxlint",
     "oxlint:ci": "oxlint --deny-warnings",
-    "lint:es:ox": "pnpm run oxlint && pnpm run eslint"
+    "lint:ox:es": "pnpm run oxlint && pnpm run eslint"
   },
   "dependencies": {
     "@netlify/functions": "^4.2.5",

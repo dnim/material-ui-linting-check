@@ -25,3 +25,16 @@ with: `pnpm run eslint  11.26s user 1.58s system 97% cpu 13.157 total`
 `pnpm run eslint:concarrent:4  35.77s user 3.86s system 235% cpu 16.842 total`
 
 ### oxlint
+
+#### only oxlint with some rules skipped
+
+```bash
+Found 255 warnings and 136 errors.
+Finished in 1.4s on 7099 files using 12 threads.
+ ELIFECYCLE  Command failed with exit code 1.
+pnpm run oxlint --silent  5.83s user 3.33s system 419% cpu 2.182 total
+```
+
+#### run oxlint first and after left rules from eslint.
+
+`"lint:ox:es": "pnpm run oxlint && pnpm run eslint"`

@@ -9,6 +9,7 @@ import {
 import { defineConfig } from 'eslint/config';
 import eslintPluginConsistentName from 'eslint-plugin-consistent-default-export-name';
 import eslintPluginReact from 'eslint-plugin-react';
+import eslintPluginOxlint from 'eslint-plugin-oxlint';
 import * as path from 'node:path';
 import { fileURLToPath } from 'url';
 
@@ -73,6 +74,10 @@ export default defineConfig(
       '@typescript-eslint/no-require-imports': 'off', // 133
     },
   },
+  // Oxlint helpers: disable ESLint rules covered by Oxlint and map rules from .oxlintrc.json
+  // Keep these near the top so that oxlint-disabled rules are applied early.
+  ...eslintPluginOxlint ? eslintPluginOxlint.configs?.['flat/eslint'] ?? [] : [],
+  ...eslintPluginOxlint ? eslintPluginOxlint.buildFromOxlintConfigFile?.('./.oxlintrc.json') ?? [] : [],
   ...['mui-material', 'mui-system', 'mui-utils', 'mui-lab', 'mui-utils', 'mui-styled-engine'].map(
     (packageName) => ({
       files: [`packages/${packageName}/src/**/*${EXTENSION_TEST_FILE}`],
