@@ -41,6 +41,9 @@ export const StyledList = styled('ul')<{ ownerState: ListOwnerState }>(({ theme,
     'borderRadius',
   ]);
   function applySizeVars(size: ListProps['size']) {
+
+    if (size === '') return {};
+
     if (size === 'sm') {
       return {
         '--ListDivider-gap': '0.25rem',
