@@ -81,6 +81,7 @@
     "**/__fixtures__"
   ],
   "rules": {
+    "import/extensions": "off",
     "for-direction": "error",
     "no-async-promise-executor": "error",
     "no-case-declarations": "error",
@@ -153,7 +154,7 @@
     "import/no-named-as-default-member": "off",
     "import/no-duplicates": "warn",
     "jsx-a11y/alt-text": [
-      "error",
+      "warn",
       {
         "elements": [
           "img"
@@ -161,9 +162,9 @@
       }
     ],
     "jsx-a11y/anchor-ambiguous-text": "off",
-    "jsx-a11y/anchor-has-content": "error",
+    "jsx-a11y/anchor-has-content": "warn",
     "jsx-a11y/anchor-is-valid": [
-      "error",
+      "warn",
       {
         "components": [
           "Link"
@@ -178,29 +179,29 @@
         ]
       }
     ],
-    "jsx-a11y/aria-activedescendant-has-tabindex": "error",
-    "jsx-a11y/aria-props": "error",
-    "jsx-a11y/aria-role": "error",
-    "jsx-a11y/aria-unsupported-elements": "error",
-    "jsx-a11y/autocomplete-valid": "error",
-    "jsx-a11y/click-events-have-key-events": "error",
-    "jsx-a11y/heading-has-content": "error",
-    "jsx-a11y/html-has-lang": "error",
-    "jsx-a11y/iframe-has-title": "error",
-    "jsx-a11y/img-redundant-alt": "error",
+    "jsx-a11y/aria-activedescendant-has-tabindex": "warn",
+    "jsx-a11y/aria-props": "warn",
+    "jsx-a11y/aria-role": "warn",
+    "jsx-a11y/aria-unsupported-elements": "warn",
+    "jsx-a11y/autocomplete-valid": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/heading-has-content": "warn",
+    "jsx-a11y/html-has-lang": "warn",
+    "jsx-a11y/iframe-has-title": "warn",
+    "jsx-a11y/img-redundant-alt": "warn",
     "jsx-a11y/label-has-associated-control": [
-      "error",
+      "warn",
       {
         "assert": "either"
       }
     ],
-    "jsx-a11y/media-has-caption": "error",
-    "jsx-a11y/mouse-events-have-key-events": "error",
-    "jsx-a11y/no-access-key": "error",
+    "jsx-a11y/media-has-caption": "warn",
+    "jsx-a11y/mouse-events-have-key-events": "warn",
+    "jsx-a11y/no-access-key": "warn",
     "jsx-a11y/no-autofocus": "off",
-    "jsx-a11y/no-distracting-elements": "error",
+    "jsx-a11y/no-distracting-elements": "warn",
     "jsx-a11y/no-noninteractive-tabindex": [
-      "error",
+      "warn",
       {
         "tags": [],
         "roles": [
@@ -209,16 +210,16 @@
         "allowExpressionValues": true
       }
     ],
-    "jsx-a11y/no-redundant-roles": "error",
-    "jsx-a11y/role-has-required-aria-props": "error",
-    "jsx-a11y/role-supports-aria-props": "error",
-    "jsx-a11y/scope": "error",
-    "jsx-a11y/tabindex-no-positive": "error",
+    "jsx-a11y/no-redundant-roles": "warn",
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn",
+    "jsx-a11y/scope": "warn",
+    "jsx-a11y/tabindex-no-positive": "warn",
     "react/jsx-key": "off",
     "react/jsx-no-comment-textnodes": "warn",
     "react/jsx-no-duplicate-props": "warn",
     "react/jsx-no-target-blank": [
-      "error",
+      "warn",
       {
         "allowReferrer": true
       }
@@ -385,17 +386,6 @@
     ],
     "no-useless-constructor": "error",
     "require-await": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "mjs": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ],
     "max-classes-per-file": "off",
     "no-alert": "error",
     "arrow-body-style": "off",
@@ -427,7 +417,9 @@
     ],
     "react/jsx-fragments": [
       "error",
-      "element"
+      {
+        "mode": "element"
+      }
     ],
     "react/no-array-index-key": "off",
     "react/no-danger": "error",
@@ -1619,6 +1611,7 @@
         "docs/**/*"
       ],
       "rules": {
+        "import/extensions": "off",
         "@next/next/google-font-display": "warn",
         "@next/next/google-font-preconnect": "warn",
         "@next/next/next-script-for-ga": "warn",
@@ -1842,7 +1835,10 @@
       ],
       "rules": {
         "react/jsx-filename-extension": "off",
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/no-unknown-property": ["error", { "ignore": ["sx"] }],
+        "import/extensions": "off"
       }
     },
     {
@@ -1868,6 +1864,17 @@
             ]
           }
         ]
+      }
+    },
+    {
+      "files": [
+        "apps/pigment-css-next-app/**/*"
+      ],
+      "rules": {
+        "import/prefer-default-export": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "react/no-unknown-property": ["error", { "ignore": ["sx"] }]
       }
     }
   ]

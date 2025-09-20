@@ -1,0 +1,141 @@
+(base) ➜  material-ui-linting-check git:(master) ✗ npx @oxlint/migrate          
+unsupported rule: constructor-super
+unsupported rule, but in development: getter-return
+unsupported rule: no-dupe-args
+unsupported rule: no-misleading-character-class
+unsupported rule: no-octal
+unsupported rule, but in development: no-undef
+unsupported rule, but in development: no-unreachable
+unsupported rule: import/no-unresolved
+unsupported rule, but in development: import/named
+unsupported rule, but in development: import/export
+unsupported rule: jsx-a11y/aria-proptypes
+unsupported rule: jsx-a11y/interactive-supports-focus
+unsupported rule: jsx-a11y/no-interactive-element-to-noninteractive-role
+unsupported rule: jsx-a11y/no-noninteractive-element-interactions
+unsupported rule: jsx-a11y/no-noninteractive-element-to-interactive-role
+unsupported rule: jsx-a11y/no-static-element-interactions
+unsupported rule: react/display-name
+unsupported rule: react/jsx-uses-react
+unsupported rule: react/jsx-uses-vars
+unsupported rule: react/no-deprecated
+unsupported rule: react/prop-types
+unsupported rule, but in development: react/require-render-return
+unsupported rule, but in development: getter-return
+unsupported rule, but in development: no-undef
+unsupported rule, but in development: no-unreachable
+unsupported rule: prefer-const
+unsupported rule, but in development: import/named
+unsupported rule: consistent-return
+unsupported rule: lines-between-class-members
+unsupported rule: prefer-const
+unsupported rule: object-shorthand
+unsupported rule: no-promise-executor-return
+unsupported rule: import/order
+unsupported rule: import/newline-after-import
+unsupported rule: spaced-comment
+unsupported rule: global-require
+unsupported rule: react/function-component-definition
+unsupported rule: react/jsx-no-constructed-context-values
+unsupported rule: react/prefer-stateless-function
+unsupported rule: react/forbid-foreign-prop-types
+unsupported rule: react/no-unused-prop-types
+unsupported rule: jsx-a11y/control-has-associated-label
+unsupported rule, but in development: import/named
+unsupported rule: @typescript-eslint/no-loop-func
+unsupported rule: @typescript-eslint/no-shadow
+unsupported rule: @typescript-eslint/naming-convention
+unsupported rule: consistent-this
+unsupported rule: dot-notation
+unsupported rule: no-implied-eval
+unsupported rule: no-underscore-dangle
+unsupported rule: prefer-arrow-callback
+unsupported rule: @typescript-eslint/no-use-before-define
+unsupported rule: import/no-relative-packages
+unsupported rule: material-ui/docgen-ignore-before-comment
+unsupported rule: material-ui/rules-of-use-theme-variants
+unsupported rule: material-ui/no-empty-box
+unsupported rule: material-ui/no-styled-box
+unsupported rule: react/default-props-match-prop-types
+unsupported rule: react/sort-prop-types
+unsupported rule: no-restricted-syntax
+unsupported rule: id-denylist
+type-aware rule detected, but `--type-aware` is not enabled: @typescript-eslint/return-await
+unsupported rule: material-ui/straight-quotes
+ignore list inside overrides is not supported
+unsupported rule: material-ui/no-restricted-resolved-imports
+ignore list inside overrides is not supported
+unsupported rule: material-ui/no-restricted-resolved-imports
+ignore list inside overrides is not supported
+unsupported rule: material-ui/no-restricted-resolved-imports
+ignore list inside overrides is not supported
+unsupported rule: material-ui/no-restricted-resolved-imports
+ignore list inside overrides is not supported
+unsupported rule: material-ui/no-restricted-resolved-imports
+ignore list inside overrides is not supported
+unsupported rule: material-ui/no-restricted-resolved-imports
+unsupported rule: mocha/handle-done-callback
+unsupported rule: mocha/max-top-level-suites
+unsupported rule: mocha/no-async-suite
+unsupported rule: mocha/no-exclusive-tests
+unsupported rule: mocha/no-exports
+unsupported rule: mocha/no-global-tests
+unsupported rule: mocha/no-identical-title
+unsupported rule: mocha/no-mocha-arrows
+unsupported rule: mocha/no-nested-tests
+unsupported rule: mocha/no-pending-tests
+unsupported rule: mocha/no-return-and-callback
+unsupported rule: mocha/no-setup-in-describe
+unsupported rule: mocha/no-sibling-hooks
+unsupported rule: mocha/no-top-level-hooks
+unsupported rule: mocha/no-empty-title
+unsupported rule: mocha/consistent-spacing-between-blocks
+unsupported rule: testing-library/await-async-events
+unsupported rule: testing-library/await-async-queries
+unsupported rule: testing-library/await-async-utils
+unsupported rule: testing-library/no-await-sync-events
+unsupported rule: testing-library/no-await-sync-queries
+unsupported rule: testing-library/no-global-regexp-flag-in-query
+unsupported rule: testing-library/no-node-access
+unsupported rule: testing-library/no-promise-in-fire-event
+unsupported rule: testing-library/no-wait-for-multiple-assertions
+unsupported rule: testing-library/no-wait-for-side-effects
+unsupported rule: testing-library/no-wait-for-snapshot
+unsupported rule: testing-library/prefer-find-by
+unsupported rule: testing-library/prefer-presence-queries
+unsupported rule: testing-library/prefer-query-by-disappearance
+unsupported rule: testing-library/prefer-screen-queries
+unsupported rule: testing-library/await-async-events
+unsupported rule: testing-library/await-async-queries
+unsupported rule: testing-library/await-async-utils
+unsupported rule: testing-library/no-await-sync-events
+unsupported rule: testing-library/no-await-sync-queries
+unsupported rule: testing-library/no-container
+unsupported rule: testing-library/no-debugging-utils
+unsupported rule: testing-library/no-dom-import
+unsupported rule: testing-library/no-global-regexp-flag-in-query
+unsupported rule: testing-library/no-manual-cleanup
+unsupported rule: testing-library/no-node-access
+unsupported rule: testing-library/no-promise-in-fire-event
+unsupported rule: testing-library/no-render-in-lifecycle
+unsupported rule: testing-library/no-unnecessary-act
+unsupported rule: testing-library/no-wait-for-multiple-assertions
+unsupported rule: testing-library/no-wait-for-side-effects
+unsupported rule: testing-library/no-wait-for-snapshot
+unsupported rule: testing-library/prefer-find-by
+unsupported rule: testing-library/prefer-presence-queries
+unsupported rule: testing-library/prefer-query-by-disappearance
+unsupported rule: testing-library/prefer-screen-queries
+unsupported rule: testing-library/render-result-naming-convention
+unsupported rule, but in development: import/named
+unsupported rule: material-ui/disallow-active-element-as-key-event-target
+unsupported rule: mocha/no-pending-tests
+ignore list inside overrides is not supported
+ignore list inside overrides is not supported
+unsupported rule: consistent-default-export-name/default-export-match-filename
+unsupported rule, but in development: import/export
+ignore list inside overrides is not supported
+unsupported rule: material-ui/disallow-react-api-in-server-components
+ignore list inside overrides is not supported
+ignore list inside overrides is not supported
+unsupported rule: material-ui/mui-name-matches-component-name
